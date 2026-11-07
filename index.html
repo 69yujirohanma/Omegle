@@ -1,0 +1,264 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0f1115">
+<title>Randomly – Free Random Video Chat &amp; Text Chat with Strangers | Omegle Alternative</title>
+<meta name="description" content="Randomly is a free Omegle alternative: talk to strangers with random video chat or text chat. No sign-up, shared interests, mobile friendly and IP privacy protection.">
+<meta name="keywords" content="Omegle alternative, Omegle clone, random video chat, talk to strangers, free stranger chat, anonymous chat, text chat with strangers, Chatroulette alternative, Ome.tv alternative, random chat no sign up, WebRTC video chat">
+<link rel="canonical" href="https://69yujirohanma.github.io/Omegle/"><link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fb923c'/%3E%3Cstop offset='.55' stop-color='%23f43f5e'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url%28%23g%29'/%3E%3Cpath d='M14 18h26a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H27l-8 7v-7h-5a5 5 0 0 1-5-5V23a5 5 0 0 1 5-5z' fill='%23fff'/%3E%3Ccircle cx='22' cy='29' r='2.6' fill='%23f43f5e'/%3E%3Ccircle cx='32' cy='29' r='2.6' fill='%23f43f5e'/%3E%3Cpath d='M44 26h6a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-2v6l-7-6' fill='%23fff' opacity='.55'/%3E%3C/svg%3E">
+<meta property="og:type" content="website"><meta property="og:title" content="Randomly – Free Random Video &amp; Text Chat with Strangers"><meta property="og:description" content="A free Omegle alternative with shared interests, no sign-up and IP privacy protection."><meta property="og:url" content="https://69yujirohanma.github.io/Omegle/"><meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Randomly", "applicationCategory": "CommunicationApplication", "operatingSystem": "Any (web browser)", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Free random video chat and text chat with strangers. An Omegle alternative with shared interests, no sign-up and IP privacy protection."}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this a good Omegle alternative?", "acceptedAnswer": {"@type": "Answer", "text": "Randomly gives you the same core experience as Omegle: random text chat and video chat with strangers, with optional shared interests, no account and no download. It is a small independent project and is not moderated."}}, {"@type": "Question", "name": "Can strangers see my IP address?", "acceptedAnswer": {"@type": "Answer", "text": "By default Randomly forces all video, audio and chat through a TURN relay, so the stranger only sees the relay's address, not yours. Your IP is still visible to the relay and signaling providers, and you can turn this protection off for faster connections."}}, {"@type": "Question", "name": "Do I need to sign up?", "acceptedAnswer": {"@type": "Answer", "text": "No. There are no accounts, emails or passwords. Pick optional interests, choose text or video, and start."}}, {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Randomly is free and open source and runs entirely as a static website on GitHub Pages."}}, {"@type": "Question", "name": "Is it safe for kids?", "acceptedAnswer": {"@type": "Answer", "text": "No. Randomly is for adults aged 18 and over. Chats with strangers are not moderated and can include inappropriate content. Never share personal information."}}]}</script>
+<style>
+:root{--bg:#0f1115;--card:#1a1d24;--line:#2b303b;--pri:#f43f5e;--acc:#fb923c;--u:clamp(42px,11vw,52px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{height:100%;margin:0}
+body{font:clamp(14px,3.7vw,16px)/1.45 system-ui,-apple-system,sans-serif;background:var(--bg);color:#e8eaed;overflow:hidden;overscroll-behavior:none}
+button,input{font:inherit}a{color:#fda4af}
+.view{display:none;position:fixed;inset:0;height:100dvh}.view.on{display:flex}
+#home{flex-direction:column;align-items:center;overflow-y:auto;scroll-behavior:smooth}#home>*{flex:0 0 auto}
+.top{width:100%;display:flex;align-items:center;gap:10px;padding:calc(10px + env(safe-area-inset-top)) 16px 10px;font-weight:700;font-size:20px}.lg{width:34px;height:34px}
+.hero{position:relative;width:100%;overflow:hidden;padding:20px 16px 36px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.28;animation:orb 14s ease-in-out infinite;z-index:0}.o1{width:300px;height:300px;background:var(--pri);top:-90px;left:-70px}.o2{width:260px;height:260px;background:#a855f7;bottom:-60px;right:-60px;animation-delay:-6s}
+.hero>*:not(.orb){position:relative;z-index:1;animation:fu .7s both}
+h1{margin:0;font-size:clamp(28px,8vw,44px);line-height:1.1}.gt{background:linear-gradient(90deg,#fb923c,#f43f5e,#a855f7,#fb923c);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 6s linear infinite}
+.lead{margin:0;max-width:620px;color:#b6bcc6}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;width:min(460px,100%);display:flex;flex-direction:column;gap:12px;text-align:left}
+.btn{border:0;border-radius:14px;padding:13px 18px;min-height:46px;color:#fff;background:#2a2f3a;cursor:pointer}.btn:active{opacity:.75}.pri{background:linear-gradient(90deg,var(--acc),var(--pri))}.red{background:#ef4444}.btn:disabled{opacity:.5}
+.row{display:flex;gap:8px}.row>*{flex:1}
+input[type=text]{width:100%;background:#12141a;border:1px solid var(--line);color:#fff;border-radius:12px;padding:12px;font-size:16px;min-height:46px}
+#chips{display:flex;flex-wrap:wrap;gap:6px}.chip{background:#2a2f3a;border-radius:99px;padding:4px 10px;font-size:13px;cursor:pointer}.chip:after{content:" ✕";opacity:.6}
+.tg{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#cfd3d8}.tg input{margin-top:3px;width:18px;height:18px;flex:0 0 auto}.sm{font-size:12px;color:#9aa0a6}
+.badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}.chipb{border:1px solid #ffffff22;border-radius:99px;padding:6px 12px;font-size:12px}
+.sec{width:min(940px,100%);padding:30px 16px;text-align:center}.sec h2{font-size:clamp(21px,5.5vw,28px);margin:0 0 8px}.sec>p{color:#b6bcc6;max-width:720px;margin:0 auto 16px}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;text-align:left}.fc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;transition:transform .25s,border-color .25s}.fc:hover{transform:translateY(-3px);border-color:var(--pri)}.fc i{font-style:normal;font-size:24px;display:block}.fc b{display:block;margin:4px 0}.fc span{color:#aab0ba;font-size:14px}
+details{background:#222630;border-radius:12px;padding:8px 12px;margin-bottom:8px;text-align:left}summary{cursor:pointer;font-weight:600;min-height:32px;display:flex;align-items:center}details p{margin:6px 0;color:#b6bcc6}
+.foot{width:min(940px,100%);padding:20px 16px 40px;color:#8b919b;font-size:12px;text-align:center}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@keyframes fu{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}@keyframes sh{to{background-position:200% 0}}@keyframes orb{50%{transform:translate(30px,-20px) scale(1.1)}}
+/* chat */
+#chat{flex-direction:column;background:#000}
+#ctop{display:flex;align-items:center;gap:8px;padding:calc(6px + env(safe-area-inset-top)) 10px 6px;background:var(--bg)}
+.ib{background:#2a2f3a;color:#fff;border:0;border-radius:12px;min-width:40px;height:40px;cursor:pointer;padding:0 10px}.ib.off{background:#ef4444}
+#st{font-size:14px}#st.on{color:#4ade80}
+#body{flex:1;display:flex;flex-direction:column;min-height:0}
+#stage{display:none;position:relative;flex:0 0 44%;background:#000;min-height:0}.vid #stage{display:block}
+#remote{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#9aa0a6;text-align:center;padding:16px}
+#rv{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000}#rv.blur{filter:blur(30px)}
+#veil{display:none;position:absolute;inset:0;align-items:center;justify-content:center;background:#0006;color:#fff;font-weight:600;cursor:pointer;z-index:2}
+#lv{position:absolute;right:8px;bottom:8px;width:26%;max-width:150px;min-width:80px;aspect-ratio:3/4;object-fit:cover;border-radius:12px;background:#222;transform:scaleX(-1);z-index:3;box-shadow:0 2px 12px #000a}
+#lv.rear{transform:none}
+#vt{position:absolute;left:8px;bottom:8px;display:flex;gap:6px;z-index:3}
+#side{flex:1;display:flex;flex-direction:column;min-height:0;background:var(--bg)}
+#log{flex:1;overflow-y:auto;padding:10px 12px;display:flex;flex-direction:column;gap:6px}
+.m{word-break:break-word;max-width:92%}.m b{margin-right:4px}.m.me b{color:#60a5fa}.m.st b{color:#fb7185}.sys{color:#9aa0a6;font-size:13px;text-align:center;padding:4px 0}
+#typ{min-height:20px;padding:0 12px;font-size:12px;color:#9aa0a6}
+#bar{display:flex;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--card)}#bar input{flex:1}#bar .btn{padding:0 16px;min-width:64px}
+@media(min-width:860px){#body{flex-direction:row}.vid #stage{flex:1 1 62%}#side{flex:0 0 380px}.vid #side{border-left:1px solid var(--line)}#chat:not(.vid) #side{max-width:760px;margin:0 auto;width:100%}}
+@media(max-height:460px) and (orientation:landscape){#body{flex-direction:row}.vid #stage{flex:1 1 55%}#side{flex:0 0 45%}#ctop{display:none}}
+#toast{position:fixed;top:calc(56px + env(safe-area-inset-top));left:50%;transform:translateX(-50%);z-index:50;display:flex;flex-direction:column;gap:6px;width:min(92vw,440px);pointer-events:none}.t{background:#303540;padding:10px 14px;border-radius:12px;box-shadow:0 2px 10px #0008;font-size:14px}
+dialog{background:var(--card);color:#e8eaed;border:1px solid var(--line);border-radius:18px;max-width:520px;width:92vw;max-height:88dvh}dialog::backdrop{background:#000b}dialog li{margin:6px 0}
+dialog .btn{width:100%;margin-top:6px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style></head><body>
+<div id="toast"></div>
+
+<dialog id="gate"><h3 style="margin-top:0">Before you start</h3><ul class="sm" style="font-size:14px;color:#cfd3d8">
+<li>You must be <b>18 or older</b> to use Randomly.</li>
+<li>You will be connected with <b>random strangers</b>. Chats are <b>not moderated</b> and may contain content you find offensive.</li>
+<li><b>Never share</b> personal information, passwords, money or your location. Anyone can lie about who they are.</li>
+<li>Nothing is recorded or stored by Randomly, but strangers could record you. Do not do anything on camera you would not want shared.</li>
+<li>Use <b>Report</b> or skip any time. Do not use Randomly for harassment, illegal content or anything involving minors.</li>
+<li>Provided "as is" without warranty. By continuing you accept these terms.</li></ul>
+<button class="btn pri" id="gok">I am 18+ and accept</button><button class="btn" onclick="gate.close()">Cancel</button></dialog>
+<dialog id="rep"><h3 style="margin-top:0">Report this stranger</h3><p class="sm">They will be blocked on this device for this session and you will be disconnected.</p>
+<button class="btn" onclick="reportAs('Nudity or sexual content')">Nudity or sexual content</button><button class="btn" onclick="reportAs('Harassment or hate')">Harassment or hate</button><button class="btn" onclick="reportAs('Spam or ads')">Spam or ads</button><button class="btn" onclick="reportAs('Appears underage')">Appears underage</button><button class="btn" onclick="reportAs('Other')">Other</button><button class="btn" onclick="rep.close()">Cancel</button>
+<p class="sm">Randomly has no moderators. For illegal content or child safety, also contact your local authorities or the National Center for Missing &amp; Exploited Children (NCMEC).</p></dialog>
+<dialog id="rl"><h3 style="margin-top:0">Privacy relay unreachable</h3><p class="sm" style="font-size:14px">Maximum IP privacy sends everything through a relay (TURN) server, but the relay could not be reached. You can use a direct connection instead, <b>which lets strangers see your IP address</b>, or cancel.</p>
+<button class="btn red" id="rlgo">Use direct connection (IP visible)</button><button class="btn" onclick="rl.close()">Cancel</button></dialog>
+
+<div id="home" class="view on">
+ <div class="top"><span id="brandlogo"><svg class='lg' aria-hidden='true' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='g2' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#fb923c'/><stop offset='.55' stop-color='#f43f5e'/><stop offset='1' stop-color='#a855f7'/></linearGradient></defs><rect width='64' height='64' rx='16' fill='url(#g2)'/><path d='M14 18h26a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H27l-8 7v-7h-5a5 5 0 0 1-5-5V23a5 5 0 0 1 5-5z' fill='#fff'/><circle cx='22' cy='29' r='2.6' fill='#f43f5e'/><circle cx='32' cy='29' r='2.6' fill='#f43f5e'/><path d='M44 26h6a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-2v6l-7-6' fill='#fff' opacity='.55'/></svg></span> Randomly</div>
+ <div class="hero"><i class="orb o1"></i><i class="orb o2"></i>
+  <h1>Talk to <span class="gt">strangers</span>.<br>Free, no sign-up.</h1>
+  <p class="lead">Randomly is a free <b>Omegle alternative</b>: random <b>video chat</b> and <b>text chat</b> with strangers around the world, with shared interests and built-in <b>IP privacy protection</b>.</p>
+  <div class="card">
+   <div><b>Interests</b> <span class="sm">(optional, press Enter to add)</span></div>
+   <div id="chips"></div>
+   <input type="text" id="tagin" placeholder="music, gaming, travel…" maxlength="24" autocomplete="off" autocapitalize="off">
+   <div class="row"><button class="btn pri" onclick="startChat('text')">💬 Text chat</button><button class="btn pri" onclick="startChat('video')">🎥 Video chat</button></div>
+   <label class="tg"><input type="checkbox" id="optRelay" checked><span><b>🛡️ Maximum IP privacy</b><br>Routes everything through a relay so strangers cannot see your IP address. Slightly slower.</span></label>
+   <label class="tg"><input type="checkbox" id="optBlur" checked><span><b>🙈 Blur stranger's video</b><br>Video starts blurred until you tap to reveal it.</span></label>
+   <div class="sm">By continuing you confirm you are 18+ and accept the <a href="#" onclick="gate.showModal();return false">terms</a>.</div>
+  </div>
+  <div class="badges"><span class="chipb">🛡️ IP protection</span><span class="chipb">🙈 Blur video</span><span class="chipb">👤 No account</span><span class="chipb">🗑️ Nothing stored</span><span class="chipb">📱 Mobile friendly</span></div>
+ </div>
+ <section class="sec rv"><h2>Everything you expect from random chat</h2><p>Meet new people instantly with free random video chat and anonymous text chat.</p><div class="g3">
+  <div class="fc"><i>🎥</i><b>Random video chat</b><span>Face-to-face with a random stranger. Skip any time.</span></div>
+  <div class="fc"><i>💬</i><b>Anonymous text chat</b><span>Chat without a camera. Typing indicators included.</span></div>
+  <div class="fc"><i>🎯</i><b>Shared interests</b><span>Add interests and get matched with people who like the same things, or fall back to anyone.</span></div>
+  <div class="fc"><i>🛡️</i><b>IP privacy protection</b><span>Relay-only mode keeps your IP address away from strangers.</span></div>
+  <div class="fc"><i>🚩</i><b>Report &amp; block</b><span>Report a stranger and never get matched with them again this session.</span></div>
+  <div class="fc"><i>📱</i><b>Made for phones</b><span>Switch cameras, go full screen and chat with large touch controls.</span></div></div></section>
+ <section class="sec rv"><h2>How it works</h2><div class="g3">
+  <div class="fc"><i>1️⃣</i><b>Pick a mode</b><span>Choose text or video and add interests if you like.</span></div>
+  <div class="fc"><i>2️⃣</i><b>Get matched</b><span>You are connected to someone who is looking for a chat right now.</span></div>
+  <div class="fc"><i>3️⃣</i><b>Skip any time</b><span>Press Skip or Esc to move on to the next stranger.</span></div></div></section>
+ <section class="sec rv"><h2>A free alternative to Omegle, Chatroulette and Ome.tv</h2><p>Looking for an Omegle alternative or an Omegle clone that works in your browser? Randomly lets you talk to strangers with random video chat or text chat, with no account, no download and no tracking. It is open source, runs on GitHub Pages and uses peer-to-peer WebRTC, so your video goes straight to the other person, through a privacy relay by default.</p></section>
+ <section class="sec rv"><h2>Frequently asked questions</h2><details><summary>Is this a good Omegle alternative?</summary><p>Randomly gives you the same core experience as Omegle: random text chat and video chat with strangers, with optional shared interests, no account and no download. It is a small independent project and is not moderated.</p></details><details><summary>Can strangers see my IP address?</summary><p>By default Randomly forces all video, audio and chat through a TURN relay, so the stranger only sees the relay's address, not yours. Your IP is still visible to the relay and signaling providers, and you can turn this protection off for faster connections.</p></details><details><summary>Do I need to sign up?</summary><p>No. There are no accounts, emails or passwords. Pick optional interests, choose text or video, and start.</p></details><details><summary>Is it free?</summary><p>Yes. Randomly is free and open source and runs entirely as a static website on GitHub Pages.</p></details><details><summary>Is it safe for kids?</summary><p>No. Randomly is for adults aged 18 and over. Chats with strangers are not moderated and can include inappropriate content. Never share personal information.</p></details></section>
+ <div class="foot rv">Randomly is an independent open-source project and is not affiliated with Omegle, Chatroulette or Ome.tv. Those names belong to their owners. Chats are unmoderated; use at your own risk. <a href="https://github.com/69yujirohanma/Omegle/" rel="noopener">Source on GitHub</a></div>
+</div>
+
+<div id="chat" class="view">
+ <div id="ctop"><button class="ib" onclick="leave()" title="Back">←</button><b id="st">…</b><span style="flex:1"></span><button class="ib" onclick="fs()" title="Full screen">⛶</button><button class="ib" onclick="askReport()" title="Report">🚩</button></div>
+ <div id="body">
+  <div id="stage"><div id="remote"><span id="ph">Looking for someone…</span></div><video id="rv" autoplay playsinline></video><div id="veil">🙈 Tap to reveal video</div>
+   <video id="lv" autoplay playsinline muted></video>
+   <div id="vt"><button class="ib" id="bm" onclick="tg('mic')">🎤</button><button class="ib" id="bc" onclick="tg('cam')">📷</button><button class="ib" id="bf" onclick="flip()">🔄</button></div></div>
+  <div id="side"><div id="log"></div><div id="typ"></div>
+   <div id="bar"><button class="btn red" id="act" onclick="act()">Stop</button><input type="text" id="mi" maxlength="1000" placeholder="Type a message…" autocomplete="off" enterkeyhint="send"><button class="btn pri" onclick="sendMsg()">Send</button></div></div>
+ </div></div>
+
+<script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script>
+/* ===== CONFIG: edit these for your own deployment ===== */
+const CFG={
+ NS:'rndly1',                       // prefix for matchmaking IDs; change to create your own isolated pool
+ SLOTS:16,                          // matchmaking slots per pool
+ STUN:[{urls:'stun:stun.cloudflare.com:3478'},{urls:'stun:stun.l.google.com:19302'}],
+ /* TURN relay used for "Maximum IP privacy". The shared public relay below is only a starter; use your own TURN credentials for reliability. */
+ TURN:[{urls:['turn:openrelay.metered.ca:80','turn:openrelay.metered.ca:443','turns:openrelay.metered.ca:443?transport=tcp'],username:'openrelayproject',credential:'openrelayproject'}],
+ PEER:{},                           // optional own PeerJS server, e.g. {host:'peer.example.com',port:443,path:'/',secure:true}
+ REPORT_URL:'https://github.com/69yujirohanma/Omegle/issues/new?title=Abuse%20report'
+};
+const $=s=>document.querySelector(s),rnd=n=>Math.floor(Math.random()*n);
+const shuffle=a=>{a=[...a];for(let i=a.length;i>1;i--){const j=rnd(i);[a[i-1],a[j]]=[a[j],a[i-1]]}return a};
+const hash=s=>{let h=5381;for(const c of s)h=((h*33)^c.charCodeAt(0))>>>0;return h.toString(36)};
+const SID=[...crypto.getRandomValues(new Uint8Array(8))].map(x=>x.toString(16).padStart(2,'0')).join('');
+const S={mode:'text',tags:[],relay:localStorage.rl!=='0',blur:localStorage.bl!=='0',tok:0,state:'idle',partner:null,local:null,sp:null,pend:{},pcall:null,
+ blocked:new Set((()=>{try{return JSON.parse(sessionStorage.blk||'[]')}catch{return[]}})())};
+try{S.tags=JSON.parse(localStorage.tags||'[]').slice(0,5)}catch{}
+const pid=(pool,n)=>CFG.NS+'-'+S.mode[0]+'-'+pool+'-'+n,poolOf=t=>'i'+hash(t);
+const popts=()=>({debug:0,...CFG.PEER,config:S.relay?{iceServers:CFG.TURN,iceTransportPolicy:'relay'}:{iceServers:[...CFG.STUN,...CFG.TURN]}});
+const toast=m=>{const d=document.createElement('div');d.className='t';d.textContent=m;$('#toast').append(d);setTimeout(()=>d.remove(),4200)};
+const show=v=>document.querySelectorAll('.view').forEach(e=>e.classList.toggle('on',e.id===v));
+const clean=(a,n=5)=>(Array.isArray(a)?a:[]).filter(x=>typeof x==='string').map(x=>x.toLowerCase().replace(/[^\p{L}\p{N} _-]/gu,'').trim().slice(0,24)).filter(Boolean).slice(0,n);
+
+/* ---- interests chips ---- */
+function chips(){const c=$('#chips');c.innerHTML='';S.tags.forEach(t=>{const s=document.createElement('span');s.className='chip';s.textContent=t;s.onclick=()=>{S.tags=S.tags.filter(x=>x!==t);saveTags();chips()};c.append(s)})}
+function saveTags(){localStorage.tags=JSON.stringify(S.tags)}
+function addTag(){const v=clean([$('#tagin').value])[0];$('#tagin').value='';if(!v||S.tags.includes(v))return;if(S.tags.length>=5)return toast('Up to 5 interests');S.tags.push(v);saveTags();chips()}
+$('#tagin').onkeydown=e=>{if(e.key==='Enter'||e.key===','){e.preventDefault();addTag()}};$('#tagin').onblur=addTag;chips();
+$('#optRelay').checked=S.relay;$('#optBlur').checked=S.blur;
+$('#optRelay').onchange=e=>{S.relay=e.target.checked;localStorage.rl=S.relay?1:0;killScanner();if(!S.relay)toast('Direct mode: strangers can see your IP address')};
+$('#optBlur').onchange=e=>{S.blur=e.target.checked;localStorage.bl=S.blur?1:0};
+
+/* ---- peers ---- */
+function openPeer(id){return new Promise((res,rej)=>{const p=new Peer(id,popts());
+ const t=setTimeout(()=>{p.off('error',er);try{p.destroy()}catch{};rej(new Error('timeout'))},9000);
+ const ok=()=>{clearTimeout(t);p.off('error',er);res(p)},er=e=>{clearTimeout(t);try{p.destroy()}catch{};rej(e)};p.once('open',ok);p.once('error',er)})}
+function killScanner(){try{S.sp&&S.sp.destroy()}catch{}S.sp=null}
+async function scanner(){if(S.sp&&!S.sp.destroyed&&!S.sp.disconnected)return S.sp;
+ const p=await openPeer(undefined);S.sp=p;
+ p.on('error',e=>{if(e&&e.type==='peer-unavailable'){const m=/peer (\S+)/.exec(e.message||'');if(m&&S.pend[m[1]])S.pend[m[1]]()}});
+ p.on('disconnected',()=>{try{p.reconnect()}catch{}});p.on('call',onIncoming);return p}
+function tryConnect(sp,id){return new Promise(res=>{let done=false,conn;
+ const fin=v=>{if(done)return;done=true;clearTimeout(t);delete S.pend[id];if(!v){try{conn&&conn.close()}catch{}}res(v?conn:null)};
+ const t=setTimeout(()=>fin(false),3500);S.pend[id]=()=>fin(false);
+ try{conn=sp.connect(id,{reliable:true,serialization:'json'})}catch{return fin(false)}
+ conn.on('open',()=>fin(true));conn.on('error',()=>fin(false));conn.on('close',()=>fin(false))})}
+function pick(conn){return new Promise(res=>{let done=false;
+ const fin=v=>{if(done)return;done=true;clearTimeout(t);conn.off('data',h);res(v)};
+ const h=d=>{if(d&&d.t==='ack')fin({conn,tags:d.tags,sid:d.sid});else if(d&&d.t==='busy')fin(null)};
+ const t=setTimeout(()=>{fin(null);try{conn.close()}catch{}},3000);
+ conn.on('data',h);conn.once('close',()=>fin(null));conn.send({t:'pick',tags:S.tags,sid:SID})})}
+async function scan(sp,pools,my){for(const pool of pools){const ids=shuffle([...Array(CFG.SLOTS).keys()]).map(n=>pid(pool,n));
+ for(let i=0;i<ids.length;i+=4){if(my!==S.tok)return null;
+  const cs=(await Promise.all(ids.slice(i,i+4).map(x=>tryConnect(sp,x)))).filter(Boolean);
+  if(!cs.length)continue;cs.slice(1).forEach(c=>{try{c.close()}catch{}});
+  if(my!==S.tok){try{cs[0].close()}catch{}return null}
+  const r=await pick(cs[0]);if(r&&S.blocked.has(String(r.sid))){try{r.conn.close()}catch{}continue}if(r)return r}}return null}
+async function host(pool,ms,my){let hp=null;
+ for(let k=0;k<4&&!hp&&my===S.tok;k++){try{hp=await openPeer(pid(pool,rnd(CFG.SLOTS)))}catch{hp=null}}
+ if(!hp)return null;if(my!==S.tok){try{hp.destroy()}catch{}return null}
+ return new Promise(res=>{let done=false;
+  const fin=v=>{if(done)return;done=true;clearTimeout(t);clearInterval(w);if(!v){try{hp.destroy()}catch{}}res(v)};
+  hp.on('error',()=>{});
+  hp.on('connection',c=>{const h=d=>{if(!d||d.t!=='pick')return;c.off('data',h);
+    if(done||S.blocked.has(String(d.sid))){try{c.send({t:'busy'})}catch{}setTimeout(()=>{try{c.close()}catch{}},300);return}
+    fin({conn:c,hp,tags:d.tags,sid:d.sid});try{c.send({t:'ack',tags:S.tags,sid:SID})}catch{}};c.on('data',h)});
+  const t=setTimeout(()=>fin(null),ms),w=setInterval(()=>{if(my!==S.tok)fin(null)},300)})}
+
+/* ---- search loop ---- */
+async function search(){const my=++S.tok;setState('search');let cycle=0;
+ try{const sp=await scanner();
+  while(my===S.tok){
+   const mine=shuffle(S.tags.map(poolOf)),pools=[...mine,...(!mine.length||cycle>=2?['g']:[])];
+   const g=await scan(sp,pools,my);if(my!==S.tok)return;
+   if(g){begin('guest',g);return}
+   const h=await host(pools[cycle%pools.length],3000+rnd(3000),my);if(my!==S.tok){if(h)closeRes(h);return}
+   if(h){begin('host',h);return}
+   cycle++}
+ }catch(e){if(my===S.tok){setState('idle');sys('Could not reach the matchmaking service. '+(S.relay?'Check your connection, or try again.':'Check your connection and try again.'))}}}
+const closeRes=r=>{try{r.conn.close()}catch{}try{r.hp&&r.hp.destroy()}catch{}};
+
+/* ---- chat ---- */
+function begin(role,r){S.tok++;const p=S.partner={role,conn:r.conn,hp:r.hp||null,tags:clean(r.tags),sid:String(r.sid||''),call:null,rate:[],typT:0};
+ $('#log').innerHTML='';setState('chat');
+ sys("You're now chatting with a random stranger. Say hi!");
+ if(S.tags.length){const c=S.tags.filter(t=>p.tags.includes(t));sys(c.length?'You both like: '+c.join(', ')+'.':'No common interests found, so this is a random stranger.')}
+ p.conn.on('data',onData);p.conn.on('close',()=>{if(S.partner===p)gone('Stranger has disconnected.')});p.conn.on('error',()=>{if(S.partner===p)gone('Connection lost.')});
+ if(S.mode==='video'){rvReset();p.vt=setTimeout(()=>{if(S.partner===p&&!$('#rv').srcObject)sys('Video is taking a while. '+(S.relay?'If it never connects, the privacy relay may be blocked. You can turn off Maximum IP privacy on the home screen (this shows your IP).':'The other person may have a blocked network.'))},20000);
+  if(role==='host')onCall(p.hp.call(p.conn.peer,S.local),p);else if(S.pcall){const c=S.pcall;S.pcall=null;c.answer(S.local);onCall(c,p)}}
+ $('#mi').focus()}
+function onIncoming(call){const p=S.partner;if(p&&p.role==='guest'&&call.peer===p.conn.peer&&!p.call){call.answer(S.local);onCall(call,p)}else if(!p&&S.state==='search')S.pcall=call;else try{call.close()}catch{}}
+function onCall(call,p){p.call=call;call.on('stream',st=>{if(S.partner!==p)return;const v=$('#rv');v.srcObject=st;v.play().catch(()=>{});$('#ph').style.display='none';if(S.blur){v.classList.add('blur');$('#veil').style.display='flex'}});call.on('close',()=>{});call.on('error',()=>{})}
+function onData(d){const p=S.partner;if(!p||!d)return;
+ if(d.t==='m'&&typeof d.x==='string'){const n=Date.now();p.rate=p.rate.filter(x=>n-x<3000);p.rate.push(n);if(p.rate.length>8)return;line('st','Stranger',d.x.slice(0,1000));$('#typ').textContent=''}
+ else if(d.t==='ty')$('#typ').textContent=d.v?'Stranger is typing…':'';
+ else if(d.t==='bye')gone('Stranger has disconnected.')}
+function gone(msg){endPartner(false);sys(msg);setState('idle');$('#typ').textContent=''}
+function endPartner(bye){const p=S.partner;S.partner=null;if(!p)return;clearTimeout(p.vt);
+ try{if(bye&&p.conn.open)p.conn.send({t:'bye'})}catch{}
+ setTimeout(()=>{try{p.conn.close()}catch{}try{p.call&&p.call.close()}catch{}try{p.hp&&p.hp.destroy()}catch{}},200);rvReset()}
+function rvReset(){const v=$('#rv');v.srcObject=null;v.classList.remove('blur');$('#veil').style.display='none';$('#ph').style.display='';$('#ph').textContent=S.state==='chat'?'Connecting video…':'Looking for someone…'}
+$('#veil').onclick=()=>{$('#rv').classList.remove('blur');$('#veil').style.display='none'};
+function line(c,who,x){const d=document.createElement('div');d.className='m '+c;const b=document.createElement('b');b.textContent=who+':';d.append(b,document.createTextNode(x));const l=$('#log');l.append(d);l.scrollTop=1e9}
+function sys(x){const d=document.createElement('div');d.className='sys';d.textContent=x;const l=$('#log');l.append(d);l.scrollTop=1e9}
+function setState(s){S.state=s;const st=$('#st'),a=$('#act');st.className=s==='chat'?'on':'';
+ st.textContent=s==='search'?'🔎 Looking for someone…':s==='chat'?'● Connected':'Disconnected';
+ a.textContent=s==='search'?'Stop':s==='chat'?'Skip':'New';$('#mi').disabled=s!=='chat';$('#ph').textContent=s==='search'?'Looking for someone…':'';
+ if(s==='search'){$('#ph').style.display='';$('#log').innerHTML='';sys('Looking for someone you can chat with…')}}
+function act(){if(S.state==='search'){S.tok++;setState('idle');sys('Stopped. Press New to look again.')}else if(S.state==='chat'){endPartner(true);search()}else search()}
+function sendMsg(){const p=S.partner,i=$('#mi'),x=i.value.trim();if(!p||!x)return;try{p.conn.send({t:'m',x});p.conn.send({t:'ty',v:false})}catch{return}line('me','You',x);i.value=''}
+$('#mi').onkeydown=e=>{if(e.key==='Enter')sendMsg()};
+$('#mi').oninput=()=>{const p=S.partner;if(!p||!p.conn.open)return;try{p.conn.send({t:'ty',v:true})}catch{}clearTimeout(p.typT);p.typT=setTimeout(()=>{try{p.conn.send({t:'ty',v:false})}catch{}},2000)};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#chat').classList.contains('on')&&!document.querySelector('dialog[open]'))act()});
+function askReport(){if(!S.partner)return toast('No one to report');$('#rep').showModal()}
+function reportAs(r){$('#rep').close();const p=S.partner;if(!p)return;if(p.sid){S.blocked.add(p.sid);sessionStorage.blk=JSON.stringify([...S.blocked])}
+ toast('Reported ('+r+') and blocked on this device');endPartner(true);setState('idle');sys('You reported and blocked this stranger. If it involved illegal content, please also report it to the authorities. '+CFG.REPORT_URL.split('/issues')[0]+'/issues');search()}
+
+/* ---- start / leave ---- */
+function gateThen(f){if(localStorage.age18==='1')return f();$('#gate').showModal();$('#gok').onclick=()=>{localStorage.age18='1';$('#gate').close();f()}}
+function relayOK(){return new Promise(res=>{let ok=false,pc;try{pc=new RTCPeerConnection({iceServers:CFG.TURN,iceTransportPolicy:'relay'})}catch{return res(false)}
+ const fin=()=>{clearTimeout(t);try{pc.close()}catch{}res(ok)},t=setTimeout(fin,7000);pc.createDataChannel('x');
+ pc.onicecandidate=e=>{if(!e.candidate)return fin();if(/ typ relay/.test(e.candidate.candidate)){ok=true;fin()}};
+ pc.createOffer().then(o=>pc.setLocalDescription(o)).catch(fin)})}
+async function getLocal(){for(const c of [{audio:true,video:{width:{ideal:640},height:{ideal:480},facingMode:'user'}},{audio:true},{video:true}])try{return await navigator.mediaDevices.getUserMedia(c)}catch{}return null}
+function startChat(mode){gateThen(async()=>{addTag();S.mode=mode;
+ if(S.relay){toast('Checking privacy relay…');if(!await relayOK()){$('#rlgo').onclick=()=>{$('#rl').close();S.relay=false;$('#optRelay').checked=false;localStorage.rl=0;killScanner();go(mode)};return $('#rl').showModal()}}
+ go(mode)})}
+async function go(mode){S.mode=mode;
+ if(mode==='video'){S.local=await getLocal();if(!S.local||!S.local.getTracks().length){toast('Camera/mic unavailable. Starting text chat instead.');S.mode=mode='text';S.local=null}}
+ $('#chat').classList.toggle('vid',mode==='video');
+ if(S.local){$('#lv').srcObject=S.local;cams()}
+ show('chat');rvReset();search()}
+function leave(){S.tok++;endPartner(true);if(S.local){S.local.getTracks().forEach(t=>t.stop());S.local=null}killScanner();setState('idle');show('home')}
+addEventListener('beforeunload',()=>{try{S.partner&&S.partner.conn.send({t:'bye'})}catch{}});
+
+/* ---- media controls ---- */
+let camList=[];async function cams(){try{camList=(await navigator.mediaDevices.enumerateDevices()).filter(d=>d.kind==='videoinput')}catch{}$('#bf').style.display=camList.length>1?'':'none'}
+function tg(k){if(!S.local)return;const t=k==='mic'?S.local.getAudioTracks():S.local.getVideoTracks();if(!t.length)return;const on=!t[0].enabled;t.forEach(x=>x.enabled=on);$(k==='mic'?'#bm':'#bc').classList.toggle('off',!on)}
+async function flip(){if(camList.length<2||!S.local)return;const old=S.local.getVideoTracks()[0];if(!old)return;const id=old.getSettings().deviceId,i=Math.max(0,camList.findIndex(c=>c.deviceId===id)),n=camList[(i+1)%camList.length];old.stop();
+ let nt;try{nt=(await navigator.mediaDevices.getUserMedia({video:{deviceId:{exact:n.deviceId}}})).getVideoTracks()[0]}catch{toast('Cannot switch camera');return}
+ const p=S.partner;try{p&&p.call&&p.call.peerConnection.getSenders().forEach(s=>s.track===old&&s.replaceTrack(nt))}catch{}
+ S.local.removeTrack(old);S.local.addTrack(nt);const lv=$('#lv');lv.srcObject=null;lv.srcObject=S.local;lv.classList.toggle('rear',nt.getSettings().facingMode==='environment')}
+function fs(){const el=S.mode==='video'&&$('#chat').classList.contains('vid')?$('#stage'):document.documentElement;if(document.fullscreenElement)document.exitFullscreen();else(el.requestFullscreen||el.webkitRequestFullscreen||(()=>toast('Full screen not supported')) ).call(el)}
+try{const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{root:$('#home'),threshold:.12});document.querySelectorAll('.rv').forEach(e=>io.observe(e))}catch{document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'))}
+</script></body></html>
