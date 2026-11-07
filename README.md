@@ -7,7 +7,7 @@
 **An open-source Omegle clone and Omegle alternative that runs entirely on GitHub Pages.**
 Talk to strangers with random video chat or anonymous text chat. No sign-up, shared interests, mobile friendly, with built-in IP privacy protection.
 
-[**Live site: 69yujirohanma.github.io/Omegle**](https://69yujirohanma.github.io/Omegle/)
+[**Live site: 69yujirohanma.github.io/Omegle**]([https://69yujirohanma.github.io/Omegle/](https://69yujirohanma.github.io/Omegle/))
 
 ![WebRTC](https://img.shields.io/badge/WebRTC-peer--to--peer-f43f5e) ![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-222) ![No sign-up](https://img.shields.io/badge/no%20sign--up-free-22c55e) ![18+](https://img.shields.io/badge/18%2B-only-red) ![License](https://img.shields.io/badge/license-MIT-blue)
 
